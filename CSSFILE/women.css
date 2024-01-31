@@ -1,0 +1,66 @@
+.productSection .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productSection .title h2 {
+  font-weight: bold;
+}
+
+.win1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.win2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.win3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.wcategories a {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.wcategories img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.wcategories img:hover {
+  transform: scale(1.05);
+}
+.newArrivals h2{
+  font-weight: bold;
+}
+/* Responsive Styles for max-width: 425px */
+@media only screen and (max-width: 425px) {
+  .win1, .win2, .win3 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wcategories img {
+      transform: none; /* Remove the scaling effect on hover for small screens */
+  }
+  .wcategories a{
+    width: 180px;
+  }
+  .wcategories{
+    display: flex;
+    overflow-y: scroll;
+  }
+}

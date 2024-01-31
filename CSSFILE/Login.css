@@ -1,0 +1,108 @@
+
+.input-fields{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   overflow: hidden;
+}
+.form img{
+    width: 118px;
+    height: 118px;
+    border: 2px solid red;
+    border-radius: 56%;
+    box-shadow: 3px 3px 10px -1px ;
+    margin-bottom: 10px;
+}
+.form {
+    background-color: #ebe3e3;
+    background-image: linear-gradient(315deg, #ebe3e3 3%, #e38686 54%, #6ee177 97%);
+    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 68vh;
+    width: 41vw;
+    border-radius: 16px;
+    position: relative;
+    left: 25%;
+    top: 15px;
+    box-shadow: 3px 3px 10px -1px gray;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+hr.part{
+    border-top: 1px solid red;
+}
+.input-fields  input{
+    margin: 5px;
+    padding: 8px 28px;
+    width: 50%;
+    border: 0;
+    border-radius: 10px;
+    
+}
+.email , .password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+i{
+    transform: translate(28px, 0px);
+}
+.bt{
+    padding: 8px 28px; 
+    border-radius: 13px;
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    border: 0;
+}
+.bt:hover{
+    background: rgb(180,88,67);
+    background: linear-gradient(328deg, rgba(180,88,67,0.9837184873949579) 9%, rgba(162,178,184,1) 100%);
+    animation: gradient 1s ease infinite;
+}
+.bt:active{
+    transform: scale(0.9);
+}
+.loader{
+    height: 3px;
+    background: linear-gradient(115deg, #99c113, #d63b4b, #b50dc1);
+    animation: loader 4s ease infinite;
+    background-size: 400% 400%;
+    transition: all 0.5s;
+    border-radius: 10px;
+    animation: load 1s ease infinite;
+}
+@keyframes loader {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+     
+	}
+}
+@keyframes load {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
